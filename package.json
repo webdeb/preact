@@ -1,6 +1,6 @@
 {
   "name": "preact",
-  "version": "8.2.1",
+  "version": "8.2.2",
   "description": "Fast 3kb React alternative with the same ES6 API. Components & Virtual DOM.",
   "main": "dist/preact.js",
   "jsnext:main": "dist/preact.esm.js",
@@ -120,13 +120,21 @@
   },
   "babel": {
     "presets": [
-      ["env", {
-        "loose": true,
-        "exclude": ["transform-es2015-typeof-symbol"],
-        "targets": {
-          "browsers": ["last 2 versions", "IE >= 9"]
+      [
+        "env",
+        {
+          "loose": true,
+          "exclude": [
+            "transform-es2015-typeof-symbol"
+          ],
+          "targets": {
+            "browsers": [
+              "last 2 versions",
+              "IE >= 9"
+            ]
+          }
         }
-      }]
+      ]
     ],
     "plugins": [
       "transform-object-rest-spread",
